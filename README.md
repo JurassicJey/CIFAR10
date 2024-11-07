@@ -1,8 +1,8 @@
-# CIFAR-10 Image Classification
+# Fashion MNIST Classification (98.5% accuracy)
 
-This project uses a Convolutional Neural Network (CNN) model implemented in PyTorch to classify images from the CIFAR-10 dataset. The model achieves an accuracy of **98.512%** on the test set.
+This notebook demonstrates building, training, and evaluating a Convolutional Neural Network (CNN) to classify images from the CIFAR10 dataset—a collection of 32x2 grayscale images across 10 object categories (e.g., Cars, birds, trucks).
 
-## Model Architecture
+## Architecture
 
 The CNN model consists of multiple convolutional and fully connected layers as outlined below:
 
@@ -32,10 +32,24 @@ The CNN model consists of multiple convolutional and fully connected layers as o
    - **ReLU Activation**
 3. **Output Layer**: 128 input features, 10 output features (corresponding to the 10 CIFAR-10 classes)
 
-## Training
+## Usage
 
-The model is trained using the Adam optimizer and CrossEntropyLoss. The data is loaded in batches, and training is done on a GPU for performance.
+1. **Data Preparation**: The notebook loads the CIFAR10 dataset and splits it into training and testing sets.
+2. **Model Training**: Defines, compiles, and trains the CNN model on the training data.
+3. **Evaluation**: Evaluates model performance on the test set, reporting accuracy and loss.
 
-## Results
+## Requirements
 
-The model achieves an accuracy of **98.512%** on the test set, demonstrating high performance in image classification for the CIFAR-10 dataset.
+To run this notebook, ensure you have:
+- Python 3.x
+- TensorFlow or PyTorch (based on your setup)
+- Common libraries like NumPy and Matplotlib
+
+## Customization
+
+This notebook allows for customization:
+- Adjust the CNN architecture (e.g., layers, filters, kernel sizes).
+- Modify hyperparameters, such as learning rate, batch size, and epochs.
+- Experiment with data augmentation techniques to enhance generalization.
+
+---
