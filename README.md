@@ -1,4 +1,4 @@
-# Fashion MNIST Classification (98.5% accuracy)
+# CIFAR10 Classification (98.5% accuracy)
 
 This notebook demonstrates building, training, and evaluating a Convolutional Neural Network (CNN) to classify images from the CIFAR10 dataset—a collection of 32x2 grayscale images across 10 object categories (e.g., Cars, birds, trucks).
 
